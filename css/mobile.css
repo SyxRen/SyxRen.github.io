@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1000px) {
+    .blog-modal {
+        margin-top: 10vh;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .workCardHolder,
+    .uniCardHolder {
+        flex-direction: column;
+    }
+
+    .workCard,
+    .uniCard {
+        width: calc(100% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workImg,
+    .uniImg {
+        margin-left: 30%;
+        width: calc(40% - 20px);
+        margin-bottom: 15px;
+    }
+    
+    .workTxt,
+    .uniTxt {
+        width: calc(100% - 20px);
+    }
+
+    .headerImgs,
+    .copyText {
+        display:none;
+    }
+
+    .social-links>li {
+        font-size: 2vh;
+    }
+}
