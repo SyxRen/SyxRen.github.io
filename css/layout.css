@@ -85,9 +85,9 @@ header:before {
    display: inline-block;
    vertical-align: middle;
    background: #2B2B2B url(../images/header.png) no-repeat top center;
-   margin: 0 auto;
-   padding-bottom: 30px;
-   height: 95vh;
+   margin: 0;
+   /* padding-bottom: 30px; */
+   height: 100vh;
    width: 100%;
    min-height: 800px;
    text-align: center;
@@ -158,7 +158,8 @@ hr {
 
 .headerContainer {
    width: 100%!important;
-   height: 100%;
+   height: 100vh;
+   margin:0!important;
 }
 
 .headerContainer>* {
