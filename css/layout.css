@@ -159,7 +159,7 @@ hr {
 .headerContainer {
    width: 100%!important;
    height: 100vh;
-   margin:0!important;
+   margin: 0!important;
 }
 
 .headerContainer>* {
@@ -611,8 +611,9 @@ ul#nav li.current a {
 }
 
 .subSkillHolderInline {
-   margin-top: 2px;
+   margin-top: 5px;
    margin-left: 5px;
+   margin-bottom: 5px;
    float: left;
 }
 
@@ -778,7 +779,7 @@ ul#nav li.current a {
 .cardImg {
    border-radius: 5px;
    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-   height: 12vw !important;
+   padding-top: 100%;
 }
 
 .blogCard {
@@ -1347,6 +1348,10 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
+[class*="column"]+[class*="column"]:last-child {
+   /* margin-top: 150px; */
+}
+
 #contact {
    background: #191919;
    padding-top: 96px;
@@ -1378,10 +1383,14 @@ call-to-action .button {
    display: none;
 }
 
-.messagebox{
+.messagebox {
    min-height: 120px;
+   height: 264px;
 }
 
+.messagebox > div {
+   height: 240px;
+}
 
 #contact h4 {
    font: 16px/24px 'Ubuntu', sans-serif;
@@ -1401,15 +1410,23 @@ call-to-action .button {
 /* contact form */
 
 #contact form {
-   margin-bottom: 30px;
+   padding: 30px 30px 0 30px;
+   margin: 0;
+}
+
+#contact form>div {
+   padding: 10px 10px 0 10px;
 }
 
 #contact label {
    font: 15px/24px 'Ubuntu', sans-serif;
-   margin: 4px;
-   padding-left: 6px;
+   margin-top: 4px;
    color: #EBEEEE;
    display: inline-block;
+}
+
+#contact textarea {
+   min-height: 50px;
 }
 
 #contact input, #contact textarea, #contact select {
@@ -1423,6 +1440,16 @@ call-to-action .button {
    font-size: 15px;
    line-height: 24px;
    /* width: 65%; */
+}
+
+.submitButton {
+   color: #eee!important;
+   border: 1px solid #429ef4!important;
+   font: 15px/24px 'Ubuntu', sans-serif!important;
+}
+
+.submitButton:hover {
+   border: 2px solid #429ef4!important;
 }
 
 #contact input:focus, #contact textarea:focus, #contact select:focus {
